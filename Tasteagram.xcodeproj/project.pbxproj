@@ -13,9 +13,11 @@
 		42C540B22747DD150084EBCA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42C540B02747DD150084EBCA /* Main.storyboard */; };
 		42C540B42747DD170084EBCA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42C540B32747DD170084EBCA /* Assets.xcassets */; };
 		42C540B72747DD170084EBCA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42C540B52747DD170084EBCA /* LaunchScreen.storyboard */; };
+		502BBF33C561F459A1C258DA /* Pods_Tasteagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 425DAB70AFC727EA2BE25849 /* Pods_Tasteagram.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		425DAB70AFC727EA2BE25849 /* Pods_Tasteagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tasteagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		42C540A72747DD150084EBCA /* Tasteagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tasteagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42C540AA2747DD150084EBCA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		42C540AC2747DD150084EBCA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		42C540B32747DD170084EBCA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		42C540B62747DD170084EBCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		42C540B82747DD170084EBCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		627F175EC57F7A5A170B3C8D /* Pods-Tasteagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tasteagram.release.xcconfig"; path = "Target Support Files/Pods-Tasteagram/Pods-Tasteagram.release.xcconfig"; sourceTree = "<group>"; };
+		8AB2F21856ABB8FA62FD8156 /* Pods-Tasteagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tasteagram.debug.xcconfig"; path = "Target Support Files/Pods-Tasteagram/Pods-Tasteagram.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				502BBF33C561F459A1C258DA /* Pods_Tasteagram.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		20478C9701AFA03C4BBE87A6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8AB2F21856ABB8FA62FD8156 /* Pods-Tasteagram.debug.xcconfig */,
+				627F175EC57F7A5A170B3C8D /* Pods-Tasteagram.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		42C5409E2747DD150084EBCA = {
 			isa = PBXGroup;
 			children = (
 				42C540A92747DD150084EBCA /* Tasteagram */,
 				42C540A82747DD150084EBCA /* Products */,
+				20478C9701AFA03C4BBE87A6 /* Pods */,
+				D5EFEF105CBB1AAA5DE46479 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +84,14 @@
 			path = Tasteagram;
 			sourceTree = "<group>";
 		};
+		D5EFEF105CBB1AAA5DE46479 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				425DAB70AFC727EA2BE25849 /* Pods_Tasteagram.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 42C540BB2747DD170084EBCA /* Build configuration list for PBXNativeTarget "Tasteagram" */;
 			buildPhases = (
+				5060A73C0E432F98F4575EB7 /* [CP] Check Pods Manifest.lock */,
 				42C540A32747DD150084EBCA /* Sources */,
 				42C540A42747DD150084EBCA /* Frameworks */,
 				42C540A52747DD150084EBCA /* Resources */,
+				FFD05D07CD55C0A0B5090DA2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5060A73C0E432F98F4575EB7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tasteagram-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FFD05D07CD55C0A0B5090DA2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tasteagram/Pods-Tasteagram-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tasteagram/Pods-Tasteagram-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Tasteagram/Pods-Tasteagram-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		42C540A32747DD150084EBCA /* Sources */ = {
@@ -284,6 +353,7 @@
 		};
 		42C540BC2747DD170084EBCA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8AB2F21856ABB8FA62FD8156 /* Pods-Tasteagram.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -312,6 +382,7 @@
 		};
 		42C540BD2747DD170084EBCA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 627F175EC57F7A5A170B3C8D /* Pods-Tasteagram.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
