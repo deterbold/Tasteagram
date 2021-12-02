@@ -2,14 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>Tasteagram may access the photo library to save your pictures</string>
-	<key>NSAppleMusicUsageDescription</key>
-	<string>Tasteagram may access the photo library to save your pictures</string>
-	<key>NSMicrophoneUsageDescription</key>
-	<string>Tasteagram may access the microphone if you take a video</string>
-	<key>NSCameraUsageDescription</key>
-	<string>Tasteagram needs access to the camera to take pictures</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

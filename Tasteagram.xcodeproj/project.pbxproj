@@ -11,12 +11,13 @@
 		42C540AD2747DD150084EBCA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C540AC2747DD150084EBCA /* SceneDelegate.swift */; };
 		42C540AF2747DD150084EBCA /* IntroController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C540AE2747DD150084EBCA /* IntroController.swift */; };
 		42C540B22747DD150084EBCA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42C540B02747DD150084EBCA /* Main.storyboard */; };
-		42C540B42747DD170084EBCA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42C540B32747DD170084EBCA /* Assets.xcassets */; };
 		42C540B72747DD170084EBCA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42C540B52747DD170084EBCA /* LaunchScreen.storyboard */; };
 		42C540BF2747E3040084EBCA /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C540BE2747E3040084EBCA /* SettingsController.swift */; };
 		42C540C12747E4CC0084EBCA /* ImageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C540C02747E4CC0084EBCA /* ImageController.swift */; };
 		42C540C32747E4F80084EBCA /* SuccessController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C540C22747E4F80084EBCA /* SuccessController.swift */; };
 		42C540C52747E5080084EBCA /* FailureController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C540C42747E5080084EBCA /* FailureController.swift */; };
+		42D4E7D82758C986007D4A07 /* prototype_taste.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 42D4E7D72758C985007D4A07 /* prototype_taste.mlmodel */; };
+		42D4E7DC2758E8DE007D4A07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42D4E7DB2758E8DD007D4A07 /* Assets.xcassets */; };
 		502BBF33C561F459A1C258DA /* Pods_Tasteagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 425DAB70AFC727EA2BE25849 /* Pods_Tasteagram.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,13 +28,14 @@
 		42C540AC2747DD150084EBCA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		42C540AE2747DD150084EBCA /* IntroController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroController.swift; sourceTree = "<group>"; };
 		42C540B12747DD150084EBCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		42C540B32747DD170084EBCA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		42C540B62747DD170084EBCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		42C540B82747DD170084EBCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		42C540BE2747E3040084EBCA /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 		42C540C02747E4CC0084EBCA /* ImageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageController.swift; sourceTree = "<group>"; };
 		42C540C22747E4F80084EBCA /* SuccessController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessController.swift; sourceTree = "<group>"; };
 		42C540C42747E5080084EBCA /* FailureController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FailureController.swift; sourceTree = "<group>"; };
+		42D4E7D72758C985007D4A07 /* prototype_taste.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = prototype_taste.mlmodel; sourceTree = "<group>"; };
+		42D4E7DB2758E8DD007D4A07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../tasteagram_assets/Assets.xcassets; sourceTree = "<group>"; };
 		627F175EC57F7A5A170B3C8D /* Pods-Tasteagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tasteagram.release.xcconfig"; path = "Target Support Files/Pods-Tasteagram/Pods-Tasteagram.release.xcconfig"; sourceTree = "<group>"; };
 		8AB2F21856ABB8FA62FD8156 /* Pods-Tasteagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tasteagram.debug.xcconfig"; path = "Target Support Files/Pods-Tasteagram/Pods-Tasteagram.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -80,15 +82,16 @@
 		42C540A92747DD150084EBCA /* Tasteagram */ = {
 			isa = PBXGroup;
 			children = (
+				42D4E7DB2758E8DD007D4A07 /* Assets.xcassets */,
+				42D4E7D72758C985007D4A07 /* prototype_taste.mlmodel */,
 				42C540AA2747DD150084EBCA /* AppDelegate.swift */,
 				42C540AC2747DD150084EBCA /* SceneDelegate.swift */,
 				42C540AE2747DD150084EBCA /* IntroController.swift */,
-				42C540BE2747E3040084EBCA /* SettingsController.swift */,
 				42C540C02747E4CC0084EBCA /* ImageController.swift */,
 				42C540C22747E4F80084EBCA /* SuccessController.swift */,
+				42C540BE2747E3040084EBCA /* SettingsController.swift */,
 				42C540C42747E5080084EBCA /* FailureController.swift */,
 				42C540B02747DD150084EBCA /* Main.storyboard */,
-				42C540B32747DD170084EBCA /* Assets.xcassets */,
 				42C540B52747DD170084EBCA /* LaunchScreen.storyboard */,
 				42C540B82747DD170084EBCA /* Info.plist */,
 			);
@@ -164,7 +167,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				42C540B72747DD170084EBCA /* LaunchScreen.storyboard in Resources */,
-				42C540B42747DD170084EBCA /* Assets.xcassets in Resources */,
+				42D4E7DC2758E8DE007D4A07 /* Assets.xcassets in Resources */,
 				42C540B22747DD150084EBCA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -223,6 +226,7 @@
 				42C540AF2747DD150084EBCA /* IntroController.swift in Sources */,
 				42C540C32747E4F80084EBCA /* SuccessController.swift in Sources */,
 				42C540AB2747DD150084EBCA /* AppDelegate.swift in Sources */,
+				42D4E7D82758C986007D4A07 /* prototype_taste.mlmodel in Sources */,
 				42C540C52747E5080084EBCA /* FailureController.swift in Sources */,
 				42C540AD2747DD150084EBCA /* SceneDelegate.swift in Sources */,
 			);
@@ -377,17 +381,23 @@
 				DEVELOPMENT_TEAM = NES4E5L6E8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Tasteagram/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Tastegram;
+				INFOPLIST_KEY_NSAppleMusicUsageDescription = "Tasteagram may access the photo library to save your pictures";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Tasteagram needs access to the camera to take pictures";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Tasteagram may access the microphone if you take a video";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Tasteagram may access the photo library to save your pictures";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = software.ridiculous.Tasteagram;
+				PRODUCT_BUNDLE_IDENTIFIER = software.ridiculous.Tastegram;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -406,17 +416,23 @@
 				DEVELOPMENT_TEAM = NES4E5L6E8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Tasteagram/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Tastegram;
+				INFOPLIST_KEY_NSAppleMusicUsageDescription = "Tasteagram may access the photo library to save your pictures";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Tasteagram needs access to the camera to take pictures";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Tasteagram may access the microphone if you take a video";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Tasteagram may access the photo library to save your pictures";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = software.ridiculous.Tasteagram;
+				PRODUCT_BUNDLE_IDENTIFIER = software.ridiculous.Tastegram;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
