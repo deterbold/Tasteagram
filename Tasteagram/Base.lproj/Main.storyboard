@@ -43,7 +43,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="let the AI decide" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ho-Jf-v2b">
-                                <rect key="frame" x="83" y="308" width="209.33333333333337" height="87"/>
+                                <rect key="frame" x="83.000000000000014" y="308" width="209.33333333333337" height="87"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="87" id="b8J-Q0-b8g"/>
                                 </constraints>
@@ -168,7 +168,11 @@
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="JMx-Cl-Bb3"/>
-                                    <barButtonItem title="SHARE" id="D4t-2V-u2r"/>
+                                    <barButtonItem title="SHARE" id="D4t-2V-u2r">
+                                        <connections>
+                                            <action selector="shareButton:" destination="2DT-Tt-LFS" id="mrX-ah-NXu"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="Cwg-oK-ogd"/>
                                 </items>
                             </toolbar>
@@ -222,8 +226,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="jtW-b3-ig1"/>
-        <segue reference="u4M-hr-P29"/>
+        <segue reference="HmE-RW-bRj"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">

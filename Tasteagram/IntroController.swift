@@ -32,6 +32,7 @@ class IntroController: UIViewController
 
     @IBAction func cameraButtonTapped(_ sender: Any)
     {
+        decision_label.text = ""
         //code for setting up the camera and presenting the view goes here.
         //creating the camera view controller
         let camera = LuminaViewController()
