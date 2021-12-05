@@ -16,6 +16,7 @@
 		42C540C12747E4CC0084EBCA /* ImageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C540C02747E4CC0084EBCA /* ImageController.swift */; };
 		42C540C32747E4F80084EBCA /* SuccessController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C540C22747E4F80084EBCA /* SuccessController.swift */; };
 		42C540C52747E5080084EBCA /* FailureController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C540C42747E5080084EBCA /* FailureController.swift */; };
+		42D21997275CAB3E00CE2B4C /* Tastegram_Hard.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 42D21996275CAB3E00CE2B4C /* Tastegram_Hard.mlmodel */; };
 		42D4E7D82758C986007D4A07 /* prototype_taste.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 42D4E7D72758C985007D4A07 /* prototype_taste.mlmodel */; };
 		42D4E7DC2758E8DE007D4A07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42D4E7DB2758E8DD007D4A07 /* Assets.xcassets */; };
 		502BBF33C561F459A1C258DA /* Pods_Tasteagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 425DAB70AFC727EA2BE25849 /* Pods_Tasteagram.framework */; };
@@ -34,6 +35,7 @@
 		42C540C02747E4CC0084EBCA /* ImageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageController.swift; sourceTree = "<group>"; };
 		42C540C22747E4F80084EBCA /* SuccessController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessController.swift; sourceTree = "<group>"; };
 		42C540C42747E5080084EBCA /* FailureController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FailureController.swift; sourceTree = "<group>"; };
+		42D21996275CAB3E00CE2B4C /* Tastegram_Hard.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Tastegram_Hard.mlmodel; sourceTree = "<group>"; };
 		42D4E7D72758C985007D4A07 /* prototype_taste.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = prototype_taste.mlmodel; sourceTree = "<group>"; };
 		42D4E7DB2758E8DD007D4A07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../tasteagram_assets/Assets.xcassets; sourceTree = "<group>"; };
 		627F175EC57F7A5A170B3C8D /* Pods-Tasteagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tasteagram.release.xcconfig"; path = "Target Support Files/Pods-Tasteagram/Pods-Tasteagram.release.xcconfig"; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				42D4E7DB2758E8DD007D4A07 /* Assets.xcassets */,
+				42D21996275CAB3E00CE2B4C /* Tastegram_Hard.mlmodel */,
 				42D4E7D72758C985007D4A07 /* prototype_taste.mlmodel */,
 				42C540AA2747DD150084EBCA /* AppDelegate.swift */,
 				42C540AC2747DD150084EBCA /* SceneDelegate.swift */,
@@ -225,6 +228,7 @@
 				42C540BF2747E3040084EBCA /* SettingsController.swift in Sources */,
 				42C540AF2747DD150084EBCA /* IntroController.swift in Sources */,
 				42C540C32747E4F80084EBCA /* SuccessController.swift in Sources */,
+				42D21997275CAB3E00CE2B4C /* Tastegram_Hard.mlmodel in Sources */,
 				42C540AB2747DD150084EBCA /* AppDelegate.swift in Sources */,
 				42D4E7D82758C986007D4A07 /* prototype_taste.mlmodel in Sources */,
 				42C540C52747E5080084EBCA /* FailureController.swift in Sources */,

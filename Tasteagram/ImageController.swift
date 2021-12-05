@@ -27,8 +27,9 @@ class ImageController: UIViewController
     {
       do {
         // 2
-        let model = try VNCoreMLModel(for: prototype_taste().model)
-        // 3
+        //let model = try VNCoreMLModel(for: prototype_taste().model)
+          let model = try VNCoreMLModel(for: Tastegram_Hard().model)
+          // 3
         let request = VNCoreMLRequest(model: model) { request, _ in
             if let classifications =
               request.results as? [VNClassificationObservation] {
