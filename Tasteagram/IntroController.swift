@@ -16,6 +16,13 @@ class IntroController: UIViewController
     
     var labelText = "let the AI decide"
     
+    var creativeMode: Int?
+
+    
+    @IBAction func settingsButton(_ sender: Any)
+    {
+        chooseModel()
+    }
     
     override func viewDidLoad()
     {
@@ -27,6 +34,8 @@ class IntroController: UIViewController
         decision_label.numberOfLines = 0
         decision_label.textAlignment = .center
         decision_label.text = labelText
+        
+        creativeMode = 0
     }
     
 
@@ -54,8 +63,43 @@ class IntroController: UIViewController
           controller.livePhotoURL = map["livePhotoURL"] as? URL
           guard let positionBool = map["isPhotoSelfie"] as? Bool else { return }
           controller.position = positionBool ? .front : .back
+            controller.creativeMode = self.creativeMode
         } else { return }
       }
+    }
+    
+    
+    
+    /**
+     Simple Alert with more than 2 buttons
+     */
+    func chooseModel() {
+        let alert = UIAlertController(title: "Model Selection", message: "Choose a Judging Model", preferredStyle: .alert)
+
+        alert.addAction(UIAlertAction(title: "Standard Mode", style: .default, handler: { (_) in
+            print("You've pressed default")
+            self.creativeMode = 0
+        }))
+
+        alert.addAction(UIAlertAction(title: "Art Mode", style: .default, handler: { (_) in
+            print("You've pressed cancel")
+            self.creativeMode = 1
+        }))
+        
+        alert.addAction(UIAlertAction(title: "Extremes Mode", style: .default, handler: { (_) in
+            print("You've pressed cancel")
+            self.creativeMode = 2
+        }))
+        
+        alert.addAction(UIAlertAction(title: "Influencer Mode", style: .default, handler: { (_) in
+            print("You've pressed cancel")
+            self.creativeMode = 3
+        }))
+
+        alert.addAction(UIAlertAction(title: "Cancel", style: .destructive, handler: { (_) in
+            print("You've pressed the destructive")
+        }))
+        self.present(alert, animated: true, completion: nil)
     }
     
 }

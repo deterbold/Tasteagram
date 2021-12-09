@@ -22,15 +22,35 @@ class ImageController: UIViewController
     var position: CameraPosition = .back
     private var _depthData: Any?
     
+    var model: VNCoreMLModel?
+    var creativeMode: Int?
+    
+    @IBOutlet weak var modelLabel: UILabel!
     
     private lazy var classificationRequest: VNCoreMLRequest =
     {
       do {
         // 2
-        //let model = try VNCoreMLModel(for: prototype_taste().model)
-          let model = try VNCoreMLModel(for: Tastegram_Hard().model)
+          switch creativeMode
+          {
+          case 0:
+              model = try VNCoreMLModel(for: prototype_taste().model)
+          case 1:
+              model = try VNCoreMLModel(for: Tastegram_Hard().model)
+          case 2:
+              model = try VNCoreMLModel(for: Tastegram_Extremes().model)
+          case 3:
+              model = try VNCoreMLModel(for: Tastegram_Influencer().model)
+          default:
+              model = try VNCoreMLModel(for: prototype_taste().model)
+          }
+//        //let model = try VNCoreMLModel(for: prototype_taste().model)
+//          if creativeMode == 0
+//          {
+//              model = try VNCoreMLModel(for: Tastegram_Hard().model)
+//          }
           // 3
-        let request = VNCoreMLRequest(model: model) { request, _ in
+          let request = VNCoreMLRequest(model: model!) { request, _ in
             if let classifications =
               request.results as? [VNClassificationObservation] {
               print("Classification results: \(classifications)")
@@ -65,8 +85,29 @@ class ImageController: UIViewController
         self.imageView.image = image
     }
     
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
+        print("creativeMode: ", creativeMode!)
+        
+        modelLabel.font = UIFont(name: "Futura Medium", size: 18)
+        modelLabel.adjustsFontSizeToFitWidth = true
+        modelLabel.allowsDefaultTighteningForTruncation = true
+        modelLabel.numberOfLines = 0
+        modelLabel.textAlignment = .center
+        switch creativeMode
+        {
+        case 0:
+            modelLabel.text = "Standard Mode"
+        case 1:
+            modelLabel.text = "Art Mode"
+        case 2:
+            modelLabel.text = "Extremes Mode"
+        case 3:
+            modelLabel.text = "Influencer Mode"
+        default:
+            modelLabel.text = "Standard Mode"
+        }
 
         // Do any additional setup after loading the view.
     }

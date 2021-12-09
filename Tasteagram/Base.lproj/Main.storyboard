@@ -22,6 +22,12 @@
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="XmR-QP-UNw">
                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </barButtonItem>
+                                    <barButtonItem title="Settings" id="nCl-7v-jF7">
+                                        <connections>
+                                            <action selector="settingsButton:" destination="BYZ-38-t0r" id="DTd-S8-hQW"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="JWy-xG-wWX"/>
                                     <barButtonItem systemItem="camera" id="lNQ-lN-823">
                                         <connections>
                                             <action selector="cameraButtonTapped:" destination="BYZ-38-t0r" id="XW3-fn-PWl"/>
@@ -107,6 +113,13 @@
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="7RJ-G2-fKA"/>
                                 </items>
                             </toolbar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hTl-Jc-2bw">
+                                <rect key="frame" x="166" y="55" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Va7-RZ-JWr"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -124,6 +137,7 @@
                     <navigationItem key="navigationItem" id="7mI-yX-NVJ"/>
                     <connections>
                         <outlet property="imageView" destination="LvL-V1-yWQ" id="4sl-6g-an8"/>
+                        <outlet property="modelLabel" destination="hTl-Jc-2bw" id="Oup-7Y-7BJ"/>
                         <segue destination="2DT-Tt-LFS" kind="presentation" identifier="sucessControllerSegue" modalPresentationStyle="fullScreen" id="NF6-q4-dYq"/>
                         <segue destination="BYZ-38-t0r" kind="presentation" identifier="regretAndReturn" modalPresentationStyle="fullScreen" id="mh5-nC-p4K"/>
                         <segue destination="BYZ-38-t0r" kind="presentation" identifier="failureSegue" modalPresentationStyle="fullScreen" id="u4M-hr-P29"/>
@@ -226,7 +240,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="HmE-RW-bRj"/>
+        <segue reference="mh5-nC-p4K"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
