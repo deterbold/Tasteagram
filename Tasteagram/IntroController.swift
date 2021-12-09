@@ -41,7 +41,20 @@ class IntroController: UIViewController
 
     @IBAction func cameraButtonTapped(_ sender: Any)
     {
-        decision_label.text = ""
+        switch creativeMode
+        {
+        case 0:
+            decision_label.text = "Standard Mode"
+        case 1:
+            decision_label.text = "Art Mode"
+        case 2:
+            decision_label.text = "Extremes Mode"
+        case 3:
+            decision_label.text = "Influencer Mode"
+        default:
+            decision_label.text = "Standard Mode"
+            
+        }
         //code for setting up the camera and presenting the view goes here.
         //creating the camera view controller
         let camera = LuminaViewController()
@@ -78,21 +91,26 @@ class IntroController: UIViewController
 
         alert.addAction(UIAlertAction(title: "Standard Mode", style: .default, handler: { (_) in
             print("You've pressed default")
+            
+            self.decision_label.text = "Standard Mode"
             self.creativeMode = 0
         }))
 
         alert.addAction(UIAlertAction(title: "Art Mode", style: .default, handler: { (_) in
             print("You've pressed cancel")
+            self.decision_label.text = "Art Mode"
             self.creativeMode = 1
         }))
         
         alert.addAction(UIAlertAction(title: "Extremes Mode", style: .default, handler: { (_) in
             print("You've pressed cancel")
+            self.decision_label.text = "Extremes Mode"
             self.creativeMode = 2
         }))
         
         alert.addAction(UIAlertAction(title: "Influencer Mode", style: .default, handler: { (_) in
             print("You've pressed cancel")
+            self.decision_label.text = "Influencer Mode"
             self.creativeMode = 3
         }))
 
