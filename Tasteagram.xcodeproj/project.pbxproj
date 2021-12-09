@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4245895127629C0F006F8B8F /* NielsTaste.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 4245895027629C0F006F8B8F /* NielsTaste.mlmodel */; };
 		42C540AB2747DD150084EBCA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C540AA2747DD150084EBCA /* AppDelegate.swift */; };
 		42C540AD2747DD150084EBCA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C540AC2747DD150084EBCA /* SceneDelegate.swift */; };
 		42C540AF2747DD150084EBCA /* IntroController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C540AE2747DD150084EBCA /* IntroController.swift */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4245895027629C0F006F8B8F /* NielsTaste.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = NielsTaste.mlmodel; sourceTree = "<group>"; };
 		425DAB70AFC727EA2BE25849 /* Pods_Tasteagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tasteagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		42C540A72747DD150084EBCA /* Tasteagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tasteagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42C540AA2747DD150084EBCA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				42D4E7DB2758E8DD007D4A07 /* Assets.xcassets */,
+				4245895027629C0F006F8B8F /* NielsTaste.mlmodel */,
 				42D2199B275CE93800CE2B4C /* Tastegram_Easy.mlmodel */,
 				42D2199C275CE93800CE2B4C /* Tastegram_Extremes.mlmodel */,
 				42D2199A275CE93800CE2B4C /* Tastegram_Influencer.mlmodel */,
@@ -241,6 +244,7 @@
 				42C540AB2747DD150084EBCA /* AppDelegate.swift in Sources */,
 				42D2199F275CE93800CE2B4C /* Tastegram_Extremes.mlmodel in Sources */,
 				42D2199D275CE93800CE2B4C /* Tastegram_Influencer.mlmodel in Sources */,
+				4245895127629C0F006F8B8F /* NielsTaste.mlmodel in Sources */,
 				42D4E7D82758C986007D4A07 /* prototype_taste.mlmodel in Sources */,
 				42D2199E275CE93800CE2B4C /* Tastegram_Easy.mlmodel in Sources */,
 				42C540C52747E5080084EBCA /* FailureController.swift in Sources */,

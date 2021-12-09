@@ -95,6 +95,11 @@ class IntroController: UIViewController
             print("You've pressed cancel")
             self.creativeMode = 3
         }))
+        
+        alert.addAction(UIAlertAction(title: "Niels Mode", style: .default, handler: { (_) in
+            print("You've pressed cancel")
+            self.creativeMode = 4
+        }))
 
         alert.addAction(UIAlertAction(title: "Cancel", style: .destructive, handler: { (_) in
             print("You've pressed the destructive")

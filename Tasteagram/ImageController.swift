@@ -41,14 +41,12 @@ class ImageController: UIViewController
               model = try VNCoreMLModel(for: Tastegram_Extremes().model)
           case 3:
               model = try VNCoreMLModel(for: Tastegram_Influencer().model)
+          case 4:
+              model = try VNCoreMLModel(for: NielsTaste().model)
           default:
               model = try VNCoreMLModel(for: prototype_taste().model)
           }
-//        //let model = try VNCoreMLModel(for: prototype_taste().model)
-//          if creativeMode == 0
-//          {
-//              model = try VNCoreMLModel(for: Tastegram_Hard().model)
-//          }
+
           // 3
           let request = VNCoreMLRequest(model: model!) { request, _ in
             if let classifications =
@@ -105,6 +103,8 @@ class ImageController: UIViewController
             modelLabel.text = "Extremes Mode"
         case 3:
             modelLabel.text = "Influencer Mode"
+        case 4:
+            modelLabel.text = "Niels Mode"
         default:
             modelLabel.text = "Standard Mode"
         }
