@@ -79,26 +79,31 @@ class IntroController: UIViewController
         alert.addAction(UIAlertAction(title: "Standard Mode", style: .default, handler: { (_) in
             print("You've pressed default")
             self.creativeMode = 0
+            self.decision_label.text = "Standard Mode"
         }))
 
         alert.addAction(UIAlertAction(title: "Art Mode", style: .default, handler: { (_) in
             print("You've pressed cancel")
             self.creativeMode = 1
+            self.decision_label.text = "Art Mode"
         }))
         
         alert.addAction(UIAlertAction(title: "Extremes Mode", style: .default, handler: { (_) in
             print("You've pressed cancel")
             self.creativeMode = 2
+            self.decision_label.text = "Extremes Mode"
         }))
         
         alert.addAction(UIAlertAction(title: "Influencer Mode", style: .default, handler: { (_) in
             print("You've pressed cancel")
             self.creativeMode = 3
+            self.decision_label.text = "Influencer Mode"
         }))
         
         alert.addAction(UIAlertAction(title: "Niels Mode", style: .default, handler: { (_) in
             print("You've pressed cancel")
             self.creativeMode = 4
+            self.decision_label.text = "Niels Mode"
         }))
 
         alert.addAction(UIAlertAction(title: "Cancel", style: .destructive, handler: { (_) in
